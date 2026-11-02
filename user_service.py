@@ -34,13 +34,12 @@ def validate_user(user):
 
 def print_user(user_id):
     user = get_user(user_id)
+    result = format_user(user)
+    print(result)
 
     if not validate_user(user):
         print("Invalid user")
         return
-
-    result = format_user(user)
-    print(result)
 
 
 def get_user_email(user_id):
