@@ -34,6 +34,7 @@ def validate_user(user):
 
 def print_user(user_id):
     user = get_user(user_id)
+    result = format_user(user)
 
     if not validate_user(user):
         print("Invalid user")
