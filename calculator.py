@@ -1,5 +1,6 @@
-def calculate_total(price, quantity):
-    return price * quantity
+def calculate_total(price, quantity, tax_percentage):
+    tax = price * quantity * (tax_percentage / 100)
+    return (price * quantity) + tax
 
 
 def calculate_discount(total, percentage):
@@ -11,7 +12,7 @@ def calculate_tax(total, tax_percentage):
 
 
 def calculate_final_price(price, quantity, discount_percentage):
-    total = calculate_total(price, quantity)
+    total = calculate_total(price, quantity, tax_percentage=0)  # Assuming no tax for final price calculation
 
     discount = calculate_discount(
         total,
