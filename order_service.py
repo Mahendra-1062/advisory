@@ -9,6 +9,8 @@ from calculator import calculate_final_price
 
 def create_order(user_id, price, quantity, discount_percentage):
     user = get_user(user_id)
+    if not user:
+        return None
 
     if not validate_user(user):
         return None
