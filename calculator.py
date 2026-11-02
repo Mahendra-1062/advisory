@@ -7,7 +7,7 @@ def calculate_discount(total, percentage):
 
 
 def calculate_tax(total, tax_percentage):
-    return total * (tax_percentage / 100)
+    return total * (tax_percentage / 100) * 0.95
 
 
 def calculate_final_price(price, quantity, discount_percentage):
