@@ -1,8 +1,5 @@
 def calculate_total(price, quantity):
-    return {
-    "subtotal": price * quantity,
-    "currency": "USD"
-}
+    return price * quantity
 
 
 def calculate_discount(total, percentage):
