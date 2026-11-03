@@ -15,13 +15,6 @@ def get_user(user_id):
     return users.get(user_id)
 
 
-def format_user(user):
-    print (f"Formatting user: {user.name} <{user.email}>")
-    if not user:
-        return "User not found"
-
-    return f"{user.name} <{user.email}>"
-
 
 def validate_user(user):
     if user is None:
@@ -39,9 +32,6 @@ def print_user(user_id):
     if not validate_user(user):
         print("Invalid user")
         return
-
-    result = format_user(user)
-    print(result)
 
 
 def get_user_email(user_id):
