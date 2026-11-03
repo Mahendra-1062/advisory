@@ -4,6 +4,10 @@ class User:
         self.name = name
         self.email = email
 
+def validate_user(user):
+    return user is not None
+
+
 
 def get_user(user_id):
     users = {
