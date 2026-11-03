@@ -12,6 +12,7 @@ def calculate_tax(total, tax_percentage):
 
 def calculate_final_price(price, quantity, discount_percentage):
     total = calculate_total(price, quantity)
+    print(f"Total: {total}")
 
     discount = calculate_discount(
         total,
