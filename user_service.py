@@ -50,5 +50,6 @@ def get_user_email(user_id):
         return None
 
     return user.email
+
 def validate_user(user):
     return user is not None
